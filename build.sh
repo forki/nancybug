@@ -4,9 +4,9 @@ then
   # use .Net
 
 
-  packages/build/FAKE/tools/FAKE.exe $@ --fsiargs -d:MONO build.fsx 
+  tools/FAKE/tools/FAKE.exe $@ --fsiargs -d:MONO build.fsx 
 else
   # use mono
 
-  mono packages/build/FAKE/tools/FAKE.exe $@ --fsiargs -d:MONO build.fsx 
+  mono tools/FAKE/tools/FAKE.exe $@ --fsiargs -d:MONO build.fsx 
 fi
